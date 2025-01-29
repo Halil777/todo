@@ -1,0 +1,117 @@
+/* General Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f7fb;
+}
+
+.formWrapper {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+}
+
+.heading {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.inputGroup {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 12px 35px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.inputGroup input:focus {
+  border-color: #00b0ff;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 176, 255, 0.3);
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #00b0ff;
+}
+
+/* Buttons */
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #00b0ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Arial", sans-serif;
+}
+
+.submitButton:hover {
+  background-color: #0083ca;
+}
+
+/* Login Redirect Button */
+.loginRedirect {
+  width: 100%;
+  padding: 12px;
+  background: none;
+  border: 1px solid #00b0ff;
+  color: #00b0ff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  font-family: "Arial", sans-serif;
+}
+
+.loginRedirect:hover {
+  background-color: #00b0ff;
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .formWrapper {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .inputGroup input {
+    font-size: 14px;
+  }
+
+  .submitButton,
+  .loginRedirect {
+    font-size: 14px;
+  }
+}

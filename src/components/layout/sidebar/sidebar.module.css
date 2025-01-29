@@ -1,0 +1,62 @@
+.sidebar {
+  width: 250px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+}
+
+.navItem {
+  margin-bottom: 10px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navLink .icon {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navLink .icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: fill 0.2s ease;
+}
+.navLink .icon * {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  background-color: #2e2e2e;
+}
+
+.active {
+  background-color: #fff;
+  color: #ff6767;
+}
+
+.active .icon * {
+  color: #ff6767;
+}
+
+.active:hover {
+  background-color: #fff;
+}
